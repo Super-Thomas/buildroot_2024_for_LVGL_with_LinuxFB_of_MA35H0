@@ -6,15 +6,14 @@
 #
 ################################################################################
 
-LVGL_VERSION = origin/master
-LVGL_SITE = https://github.com/lvgl/lv_port_linux.git
-LVGL_SITE_METHOD = git
-LVGL_GIT_SUBMODULES = YES
+LVGL_VERSION = release/v9.2
+LVGL_SITE = ./custom/lvgl-release_v9.2
+LVGL_SITE_METHOD = local
 LVGL_INSTALL_STAGING = YES
 LVGL_LICENSE = MIT
 LVGL_LICENSE_FILES = LICENSE
 
-LVGL_DEPENDENCIES = host-cmake
+LVGL_DEPENDENCIES = host-cmake tslib
 
 define LVGL_CONFIGURE_TOUCHSCREEN
         @if grep -Eq "^BR2_PACKAGE_LVGL_DEFAULT_RESISTIVE_TOUCHSCREEN=y$\" ${BR2_CONFIG}; then \
