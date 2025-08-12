@@ -22,6 +22,9 @@ This Buildroot can be used to port Embedded Linux with LVGL v9.2(framebuffer-bas
 ### Results
 <img width="975" height="710" alt="image" src="https://github.com/user-attachments/assets/02e34c1d-368f-479b-835a-067beb249ff0" />
 
+## Embedded Linux for emWin of MA35H0
+Please refer https://github.com/Super-Thomas/buildroot_2024_for_emWin_of_MA35H0
+
 ## Thanks to
 https://github.com/OpenNuvoton/buildroot_2024<br />
 https://github.com/lvgl/lv_port_linux
